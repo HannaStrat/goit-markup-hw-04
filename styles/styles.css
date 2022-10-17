@@ -256,7 +256,7 @@ header .link-logo {
     margin: 1px;
 }
 
-.excellence-item {
+.excellence-list {
     display: flex;
     gap: 30px;
     padding-left: 15px;
@@ -284,15 +284,38 @@ header .link-logo {
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-
-/*.excellence-list::before {
+.excellence-item {
+    width: 270px;
+}
+.excellence-item::before {
     content: "";
     display: block;
     height: 120px;
-    outline: 1px solid red;
+    border-radius: 4px;
+    
+    background-color: rgba(245, 244, 250, 1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-bottom: 30px;
+} 
+.icon-antenna::before {
+    background-image: url("../img/antenna.svg");
+    background-size: 70px 70px;
+}
+.icon-clock::before {
+    background-image: url("../img/clock.svg");
+    background-size: 70px 70px;
+}
+.icon-diagram::before {
+    background-image: url("../img/diagram.svg");
+    background-size: 70px 70px;
+}
+.icon-astronaut::before {
+    background-image: url("../img/astronaut.svg");
+    background-size: 70px 70px;
+}
 
-} */
 
 /* activities */
 
