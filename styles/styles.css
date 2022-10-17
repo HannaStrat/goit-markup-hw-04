@@ -197,9 +197,9 @@ header .link-logo {
         rgba(47, 48, 58, 0.4)),
         url("../img/bgrhero.jpeg");
 
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 } 
 .hero-container {
     padding-top: 200px;
@@ -336,13 +336,22 @@ img {
     background-color: var(--primary-white-color);
     border: 1px solid transparent;
     width: 270px;
-    height: 368px;
+    height: 428px;
     text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
-    margin-right: 0;  
+    margin-right: 0; 
+
 }
 .team-container {
     padding-top: 30px;
+    padding-bottom: 0;
+}
+.team-connect-container {
+    padding-top: 0;
     padding-bottom: 30px;
 }
 
@@ -360,6 +369,37 @@ img {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.team-connect-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.team-connect-icon {
+    fill: rgba(175, 177, 184, 1);
+}
+
+.team-connect-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+.team-connect-link:hover,
+.team-connect-link:focus {
+    background-color: var(--accent-color);
+    fill: #FFFFFF;
+}
+.team-connect-link:hover .team-connect-icon,
+.team-connect-link:focus .team-connect-icon {
+    fill: #FFFFFF;
 }
 
 /* clients */
@@ -483,7 +523,7 @@ footer .link-logo {
 .connect-list {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     padding: 0;
 }
 
@@ -540,12 +580,18 @@ footer .link-logo {
 .filter-button:focus {
     background-color: var(--accent-color);
     color: #FFFFFF;
-
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-button.current {
     background-color: #2196F3;
     color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 /* Project */
 
 
@@ -556,14 +602,9 @@ footer .link-logo {
     flex-basis: calc((100% - 30px)/3);
     padding: 0;
     margin: 0;
-    
+    text-decoration: none;
 }
 
-/* .project {
-    display: block;
-    border: 1px solid #EEEEEE;
-    
-} */
 .project-container {
     display: block;
     max-width: 370px;
@@ -579,14 +620,29 @@ footer .link-logo {
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    text-decoration: none;
 }
 .project.text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.project-link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.project:hover,
+.project:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 
 
