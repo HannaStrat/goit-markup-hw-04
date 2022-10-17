@@ -84,7 +84,7 @@ ul {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 header .link-logo {
     display: block;
@@ -103,19 +103,34 @@ header .link-logo {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 0;
-    margin-right: 344px;
+    margin-right: 308px;
 }
 
 .contacts {
     display:flex;
     align-items: center;
+    justify-content: baseline;
     gap: 50px;
+    flex-wrap: nowrap;
     
     margin: 0;
     padding-top: 32px;
     padding-right: 0;
     padding-bottom: 32px;
     padding-left: 0;
+}
+.contacts-item {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    flex-wrap: nowrap;
+
+}
+.contacts-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
 }
 
 .link {
@@ -127,7 +142,10 @@ header .link-logo {
     line-height: 1.17;
     letter-spacing: 0.02em;
 }
-
+.contacts-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
 .link.email,
 .link.tel {
     color: var(--primary-text-color);
@@ -136,6 +154,9 @@ header .link-logo {
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .link:hover {
@@ -209,28 +230,16 @@ header .link-logo {
 
 .excellence-item {
     display: flex;
-    
-    height: 120px;
     gap: 30px;
-    padding-left: 0;
-    margin:0;
-}
-.excelence-container {
-    padding-bottom: 30px;
+    padding-left: 15px;
+    margin: 0;
 }
 
 
-.excellence-list {
-    width: calc((100%-90px)/4);
-    display: block;
-    justify-content: space-between;
-}
-
-    
 .excellence-title {
     margin-top: 0;
     margin-bottom: 10px;
-    
+
     color: var(--title-text-color);
     text-transform: uppercase;
     font-weight: 700;
@@ -238,6 +247,7 @@ header .link-logo {
     line-height: 1.14;
     letter-spacing: 0.03em;
 }
+
 .excellence .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -246,6 +256,7 @@ header .link-logo {
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
+
 /*.excellence-list::before {
     content: "";
     display: block;
