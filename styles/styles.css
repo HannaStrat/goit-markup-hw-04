@@ -320,7 +320,7 @@ header .link-logo {
 /* activities */
 
 .section-activities {
-    padding-top: 94px;
+    padding-top: 0;
     padding-bottom: 94px;
 }
 
@@ -645,7 +645,7 @@ footer .link-logo {
     margin-bottom: 4px;
     text-decoration: none;
 }
-.project.text {
+.project-text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
